@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </mutableArray>
+        <mutableArray key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </mutableArray>
+        <mutableArray key="eurof35.ttf">
+            <string>Eurofurencelight</string>
+        </mutableArray>
+        <mutableArray key="eurof55.ttf">
+            <string>Eurofurenceregular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="signUpViewController" id="BYZ-38-t0r" customClass="SignUpViewController" customModule="amico" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signup_background" translatesAutoresizingMaskIntoConstraints="NO" id="b6J-Ge-N8P">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AMICO" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de8-Wh-9kc">
+                                <rect key="frame" x="94" y="32" width="133" height="48"/>
+                                <fontDescription key="fontDescription" name="Eurofurenceregular" family="eurofurence" pointSize="47"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toV-d3-dbD">
+                                <rect key="frame" x="49" y="116" width="222" height="41"/>
+                                <string key="text">Creating a Dent in Inspiring New Friendships for a Thrilling Life</string>
+                                <fontDescription key="fontDescription" name="Eurofurencelight" family="eurofurence light" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOh-zo-Wk7">
+                                <rect key="frame" x="40" y="482" width="240" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="p0z-Yj-5fN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                <state key="normal" title="Sign Up with e-mail"/>
+                                <connections>
+                                    <action selector="singUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4GJ-9D-yoP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyT-b5-ekl">
+                                <rect key="frame" x="97" y="530" width="127" height="25"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <state key="normal" title="Already have an account?"/>
+                                <connections>
+                                    <action selector="logInButtontapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HFX-UY-uWV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b6J-Ge-N8P" firstAttribute="top" secondItem="de8-Wh-9kc" secondAttribute="bottom" constant="-80" id="14B-Q9-37r"/>
+                            <constraint firstItem="aOh-zo-Wk7" firstAttribute="centerX" secondItem="b6J-Ge-N8P" secondAttribute="centerX" id="KBG-Ao-xVi"/>
+                            <constraint firstItem="de8-Wh-9kc" firstAttribute="centerX" secondItem="b6J-Ge-N8P" secondAttribute="centerX" id="Orh-wD-lcP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="b6J-Ge-N8P" secondAttribute="bottom" id="S2d-Xi-z8z"/>
+                            <constraint firstAttribute="trailing" secondItem="b6J-Ge-N8P" secondAttribute="trailing" id="Xlx-u3-wyO"/>
+                            <constraint firstItem="b6J-Ge-N8P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cPF-9s-hPQ"/>
+                            <constraint firstItem="b6J-Ge-N8P" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iS3-SR-b9G"/>
+                            <constraint firstItem="toV-d3-dbD" firstAttribute="top" secondItem="de8-Wh-9kc" secondAttribute="bottom" constant="36" id="jWi-DZ-RYG"/>
+                            <constraint firstItem="AyT-b5-ekl" firstAttribute="centerX" secondItem="b6J-Ge-N8P" secondAttribute="centerX" id="kkW-k6-mRZ"/>
+                            <constraint firstItem="toV-d3-dbD" firstAttribute="centerX" secondItem="de8-Wh-9kc" secondAttribute="centerX" id="kvI-Bv-ag5"/>
+                            <constraint firstItem="AyT-b5-ekl" firstAttribute="top" secondItem="b6J-Ge-N8P" secondAttribute="bottom" constant="-38" id="mwm-NS-WoL"/>
+                            <constraint firstItem="aOh-zo-Wk7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="r4E-gV-UdC"/>
+                            <constraint firstItem="AyT-b5-ekl" firstAttribute="top" secondItem="aOh-zo-Wk7" secondAttribute="bottom" constant="10" id="urn-v7-b0F"/>
+                            <constraint firstAttribute="trailing" secondItem="aOh-zo-Wk7" secondAttribute="trailing" constant="40" id="zjI-ZC-AmQ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="signUpButton" destination="aOh-zo-Wk7" id="SPh-V5-moY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="529" y="360"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="signup_background" width="1080" height="1920"/>
+    </resources>
+</document>

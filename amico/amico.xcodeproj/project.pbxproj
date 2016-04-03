@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04545DE91CAE9AF500DDAA8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04545DDB1CAE9AF500DDAA8A /* Assets.xcassets */; };
+		04545DEA1CAE9AF500DDAA8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04545DE11CAE9AF500DDAA8A /* LaunchScreen.storyboard */; };
+		04545DEB1CAE9AF500DDAA8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04545DE31CAE9AF500DDAA8A /* Main.storyboard */; };
+		04545DEC1CAE9AF500DDAA8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04545DE61CAE9AF500DDAA8A /* AppDelegate.swift */; };
+		04545DF01CAE9BD700DDAA8A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04545DEF1CAE9BD700DDAA8A /* SignUpViewController.swift */; };
+		049AD04F1CAEAF2D0049A62A /* eurof35.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049AD04A1CAEAF2D0049A62A /* eurof35.ttf */; };
+		049AD0501CAEAF2D0049A62A /* eurof55.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049AD04B1CAEAF2D0049A62A /* eurof55.ttf */; };
+		049AD0511CAEAF2D0049A62A /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049AD04C1CAEAF2D0049A62A /* Roboto-Light.ttf */; };
+		049AD0521CAEAF2D0049A62A /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049AD04D1CAEAF2D0049A62A /* Roboto-Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04545DDB1CAE9AF500DDAA8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04545DE21CAE9AF500DDAA8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04545DE41CAE9AF500DDAA8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04545DE61CAE9AF500DDAA8A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04545DE71CAE9AF500DDAA8A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04545DEF1CAE9BD700DDAA8A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = SignUp/SignUpViewController.swift; sourceTree = "<group>"; };
+		049AD04A1CAEAF2D0049A62A /* eurof35.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = eurof35.ttf; sourceTree = "<group>"; };
+		049AD04B1CAEAF2D0049A62A /* eurof55.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = eurof55.ttf; sourceTree = "<group>"; };
+		049AD04C1CAEAF2D0049A62A /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		049AD04D1CAEAF2D0049A62A /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		746DA0EA1CAD23B9007A902D /* amico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amico.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		746DA0E71CAD23B9007A902D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04545DDA1CAE9AF500DDAA8A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				049AD04E1CAEAF2D0049A62A /* Fonts */,
+				04545DDB1CAE9AF500DDAA8A /* Assets.xcassets */,
+			);
+			name = Assets;
+			path = amico/Assets;
+			sourceTree = "<group>";
+		};
+		04545DDC1CAE9AF500DDAA8A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04545DEE1CAE9B4900DDAA8A /* SignUp */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04545DDD1CAE9AF500DDAA8A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04545DDE1CAE9AF500DDAA8A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		04545DDF1CAE9AF500DDAA8A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04545DE01CAE9AF500DDAA8A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				04545DE11CAE9AF500DDAA8A /* LaunchScreen.storyboard */,
+				04545DE31CAE9AF500DDAA8A /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		04545DE51CAE9AF500DDAA8A /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				04545DE61CAE9AF500DDAA8A /* AppDelegate.swift */,
+				04545DE71CAE9AF500DDAA8A /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		04545DE81CAE9AF500DDAA8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04545DEE1CAE9B4900DDAA8A /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				04545DEF1CAE9BD700DDAA8A /* SignUpViewController.swift */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		049AD04E1CAEAF2D0049A62A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				049AD04A1CAEAF2D0049A62A /* eurof35.ttf */,
+				049AD04B1CAEAF2D0049A62A /* eurof55.ttf */,
+				049AD04C1CAEAF2D0049A62A /* Roboto-Light.ttf */,
+				049AD04D1CAEAF2D0049A62A /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		746DA0E11CAD23B9007A902D = {
+			isa = PBXGroup;
+			children = (
+				746DA0EC1CAD23B9007A902D /* amico */,
+				04545DDA1CAE9AF500DDAA8A /* Assets */,
+				746DA0EB1CAD23B9007A902D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		746DA0EB1CAD23B9007A902D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				746DA0EA1CAD23B9007A902D /* amico.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		746DA0EC1CAD23B9007A902D /* amico */ = {
+			isa = PBXGroup;
+			children = (
+				04545DDF1CAE9AF500DDAA8A /* Model */,
+				04545DDC1CAE9AF500DDAA8A /* Controller */,
+				04545DDD1CAE9AF500DDAA8A /* Extensions */,
+				04545DDE1CAE9AF500DDAA8A /* Helpers */,
+				04545DE01CAE9AF500DDAA8A /* Storyboards */,
+				04545DE51CAE9AF500DDAA8A /* Supporting */,
+				04545DE81CAE9AF500DDAA8A /* View */,
+			);
+			path = amico;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		746DA0E91CAD23B9007A902D /* amico */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 746DA0FC1CAD23B9007A902D /* Build configuration list for PBXNativeTarget "amico" */;
+			buildPhases = (
+				746DA0E61CAD23B9007A902D /* Sources */,
+				746DA0E71CAD23B9007A902D /* Frameworks */,
+				746DA0E81CAD23B9007A902D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = amico;
+			productName = amico;
+			productReference = 746DA0EA1CAD23B9007A902D /* amico.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		746DA0E21CAD23B9007A902D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = perpet.io;
+				TargetAttributes = {
+					746DA0E91CAD23B9007A902D = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 746DA0E51CAD23B9007A902D /* Build configuration list for PBXProject "amico" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 746DA0E11CAD23B9007A902D;
+			productRefGroup = 746DA0EB1CAD23B9007A902D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				746DA0E91CAD23B9007A902D /* amico */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		746DA0E81CAD23B9007A902D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049AD0501CAEAF2D0049A62A /* eurof55.ttf in Resources */,
+				049AD0521CAEAF2D0049A62A /* Roboto-Regular.ttf in Resources */,
+				04545DEB1CAE9AF500DDAA8A /* Main.storyboard in Resources */,
+				04545DE91CAE9AF500DDAA8A /* Assets.xcassets in Resources */,
+				049AD0511CAEAF2D0049A62A /* Roboto-Light.ttf in Resources */,
+				04545DEA1CAE9AF500DDAA8A /* LaunchScreen.storyboard in Resources */,
+				049AD04F1CAEAF2D0049A62A /* eurof35.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		746DA0E61CAD23B9007A902D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04545DF01CAE9BD700DDAA8A /* SignUpViewController.swift in Sources */,
+				04545DEC1CAE9AF500DDAA8A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04545DE11CAE9AF500DDAA8A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04545DE21CAE9AF500DDAA8A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04545DE31CAE9AF500DDAA8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04545DE41CAE9AF500DDAA8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		746DA0FA1CAD23B9007A902D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		746DA0FB1CAD23B9007A902D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		746DA0FD1CAD23B9007A902D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = amico/Supporting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amico;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		746DA0FE1CAD23B9007A902D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = amico/Supporting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amico;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		746DA0E51CAD23B9007A902D /* Build configuration list for PBXProject "amico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				746DA0FA1CAD23B9007A902D /* Debug */,
+				746DA0FB1CAD23B9007A902D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		746DA0FC1CAD23B9007A902D /* Build configuration list for PBXNativeTarget "amico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				746DA0FD1CAD23B9007A902D /* Debug */,
+				746DA0FE1CAD23B9007A902D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 746DA0E21CAD23B9007A902D /* Project object */;
+}
