@@ -7,29 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0453133D1CB3AC3C006FC9C3 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453133C1CB3AC3C006FC9C3 /* StringExtension.swift */; };
+		045313501CB3F294006FC9C3 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045313471CB3F294006FC9C3 /* CreateAccountViewController.swift */; };
+		045313511CB3F294006FC9C3 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045313491CB3F294006FC9C3 /* ForgotPasswordViewController.swift */; };
+		045313521CB3F294006FC9C3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453134B1CB3F294006FC9C3 /* LoginViewController.swift */; };
+		045313531CB3F294006FC9C3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453134D1CB3F294006FC9C3 /* SignUpViewController.swift */; };
+		045313541CB3F294006FC9C3 /* WellcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453134F1CB3F294006FC9C3 /* WellcomeViewController.swift */; };
 		04545DE91CAE9AF500DDAA8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04545DDB1CAE9AF500DDAA8A /* Assets.xcassets */; };
 		04545DEA1CAE9AF500DDAA8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04545DE11CAE9AF500DDAA8A /* LaunchScreen.storyboard */; };
 		04545DEB1CAE9AF500DDAA8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04545DE31CAE9AF500DDAA8A /* Main.storyboard */; };
 		04545DEC1CAE9AF500DDAA8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04545DE61CAE9AF500DDAA8A /* AppDelegate.swift */; };
-		04545DF01CAE9BD700DDAA8A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04545DEF1CAE9BD700DDAA8A /* SignUpViewController.swift */; };
 		049AD04F1CAEAF2D0049A62A /* eurof35.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049AD04A1CAEAF2D0049A62A /* eurof35.ttf */; };
 		049AD0501CAEAF2D0049A62A /* eurof55.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049AD04B1CAEAF2D0049A62A /* eurof55.ttf */; };
 		049AD0511CAEAF2D0049A62A /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049AD04C1CAEAF2D0049A62A /* Roboto-Light.ttf */; };
 		049AD0521CAEAF2D0049A62A /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049AD04D1CAEAF2D0049A62A /* Roboto-Regular.ttf */; };
+		04C9C8CB1CB2B75A00EC4F4F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9C8CA1CB2B75A00EC4F4F /* UIColorExtension.swift */; };
+		6845A86737001C0863EE9FC0 /* Pods_amico.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A2E3FC4B9724ECFECF4C44 /* Pods_amico.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0453133C1CB3AC3C006FC9C3 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		045313471CB3F294006FC9C3 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		045313491CB3F294006FC9C3 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		0453134B1CB3F294006FC9C3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0453134D1CB3F294006FC9C3 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		0453134F1CB3F294006FC9C3 /* WellcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WellcomeViewController.swift; sourceTree = "<group>"; };
 		04545DDB1CAE9AF500DDAA8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04545DE21CAE9AF500DDAA8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04545DE41CAE9AF500DDAA8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04545DE61CAE9AF500DDAA8A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04545DE71CAE9AF500DDAA8A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04545DEF1CAE9BD700DDAA8A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = SignUp/SignUpViewController.swift; sourceTree = "<group>"; };
 		049AD04A1CAEAF2D0049A62A /* eurof35.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = eurof35.ttf; sourceTree = "<group>"; };
 		049AD04B1CAEAF2D0049A62A /* eurof55.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = eurof55.ttf; sourceTree = "<group>"; };
 		049AD04C1CAEAF2D0049A62A /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		049AD04D1CAEAF2D0049A62A /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		04C9C8CA1CB2B75A00EC4F4F /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		532986C5757042C1E0F310E8 /* Pods-amico.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amico.debug.xcconfig"; path = "Pods/Target Support Files/Pods-amico/Pods-amico.debug.xcconfig"; sourceTree = "<group>"; };
 		746DA0EA1CAD23B9007A902D /* amico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amico.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C639E95A9B9C68ECE05D2648 /* Pods-amico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amico.release.xcconfig"; path = "Pods/Target Support Files/Pods-amico/Pods-amico.release.xcconfig"; sourceTree = "<group>"; };
+		E1A2E3FC4B9724ECFECF4C44 /* Pods_amico.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_amico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,12 +53,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6845A86737001C0863EE9FC0 /* Pods_amico.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045313451CB3F294006FC9C3 /* Autentification */ = {
+			isa = PBXGroup;
+			children = (
+				045313461CB3F294006FC9C3 /* Create Acoount */,
+				045313481CB3F294006FC9C3 /* ForgotPassword */,
+				0453134A1CB3F294006FC9C3 /* Login */,
+				0453134C1CB3F294006FC9C3 /* SignUp */,
+				0453134E1CB3F294006FC9C3 /* Wellcome */,
+			);
+			path = Autentification;
+			sourceTree = "<group>";
+		};
+		045313461CB3F294006FC9C3 /* Create Acoount */ = {
+			isa = PBXGroup;
+			children = (
+				045313471CB3F294006FC9C3 /* CreateAccountViewController.swift */,
+			);
+			path = "Create Acoount";
+			sourceTree = "<group>";
+		};
+		045313481CB3F294006FC9C3 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				045313491CB3F294006FC9C3 /* ForgotPasswordViewController.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		0453134A1CB3F294006FC9C3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0453134B1CB3F294006FC9C3 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0453134C1CB3F294006FC9C3 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				0453134D1CB3F294006FC9C3 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		0453134E1CB3F294006FC9C3 /* Wellcome */ = {
+			isa = PBXGroup;
+			children = (
+				0453134F1CB3F294006FC9C3 /* WellcomeViewController.swift */,
+			);
+			path = Wellcome;
+			sourceTree = "<group>";
+		};
 		04545DDA1CAE9AF500DDAA8A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -56,7 +125,7 @@
 		04545DDC1CAE9AF500DDAA8A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				04545DEE1CAE9B4900DDAA8A /* SignUp */,
+				045313451CB3F294006FC9C3 /* Autentification */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -64,6 +133,8 @@
 		04545DDD1CAE9AF500DDAA8A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				04C9C8CA1CB2B75A00EC4F4F /* UIColorExtension.swift */,
+				0453133C1CB3AC3C006FC9C3 /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -107,14 +178,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		04545DEE1CAE9B4900DDAA8A /* SignUp */ = {
-			isa = PBXGroup;
-			children = (
-				04545DEF1CAE9BD700DDAA8A /* SignUpViewController.swift */,
-			);
-			name = SignUp;
-			sourceTree = "<group>";
-		};
 		049AD04E1CAEAF2D0049A62A /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +195,8 @@
 				746DA0EC1CAD23B9007A902D /* amico */,
 				04545DDA1CAE9AF500DDAA8A /* Assets */,
 				746DA0EB1CAD23B9007A902D /* Products */,
+				80ED2D35F5472B45A1086411 /* Pods */,
+				FA43EE6FC6A0054D82411B02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +222,23 @@
 			path = amico;
 			sourceTree = "<group>";
 		};
+		80ED2D35F5472B45A1086411 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				532986C5757042C1E0F310E8 /* Pods-amico.debug.xcconfig */,
+				C639E95A9B9C68ECE05D2648 /* Pods-amico.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA43EE6FC6A0054D82411B02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1A2E3FC4B9724ECFECF4C44 /* Pods_amico.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 746DA0FC1CAD23B9007A902D /* Build configuration list for PBXNativeTarget "amico" */;
 			buildPhases = (
+				3B3982548CF590BF5AB9ED09 /* Check Pods Manifest.lock */,
 				746DA0E61CAD23B9007A902D /* Sources */,
 				746DA0E71CAD23B9007A902D /* Frameworks */,
 				746DA0E81CAD23B9007A902D /* Resources */,
+				41E3364956EE858DAF26C691 /* Embed Pods Frameworks */,
+				B3CD33778350F49945DF5BB9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,13 +312,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B3982548CF590BF5AB9ED09 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		41E3364956EE858DAF26C691 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-amico/Pods-amico-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3CD33778350F49945DF5BB9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-amico/Pods-amico-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		746DA0E61CAD23B9007A902D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04545DF01CAE9BD700DDAA8A /* SignUpViewController.swift in Sources */,
+				045313521CB3F294006FC9C3 /* LoginViewController.swift in Sources */,
+				045313531CB3F294006FC9C3 /* SignUpViewController.swift in Sources */,
+				045313541CB3F294006FC9C3 /* WellcomeViewController.swift in Sources */,
+				045313501CB3F294006FC9C3 /* CreateAccountViewController.swift in Sources */,
+				0453133D1CB3AC3C006FC9C3 /* StringExtension.swift in Sources */,
+				045313511CB3F294006FC9C3 /* ForgotPasswordViewController.swift in Sources */,
 				04545DEC1CAE9AF500DDAA8A /* AppDelegate.swift in Sources */,
+				04C9C8CB1CB2B75A00EC4F4F /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +483,7 @@
 		};
 		746DA0FD1CAD23B9007A902D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 532986C5757042C1E0F310E8 /* Pods-amico.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
@@ -356,6 +496,7 @@
 		};
 		746DA0FE1CAD23B9007A902D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C639E95A9B9C68ECE05D2648 /* Pods-amico.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
