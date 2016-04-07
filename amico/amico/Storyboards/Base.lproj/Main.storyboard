@@ -131,7 +131,7 @@
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wgg-Tc-EwL">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGg-WB-QL8">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGg-WB-QL8">
                                                 <rect key="frame" x="189" y="238" width="101" height="29"/>
                                                 <fontDescription key="fontDescription" name="Eurofurencelight" family="eurofurence light" pointSize="16"/>
                                                 <state key="normal" title="Forgot password?">
@@ -141,7 +141,7 @@
                                                     <action selector="forgotPassordButtonTapped:" destination="pbh-Gf-PUO" eventType="touchUpInside" id="74d-My-Hau"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cY-De-RJM">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cY-De-RJM">
                                                 <rect key="frame" x="30" y="289" width="260" height="45"/>
                                                 <color key="backgroundColor" red="1" green="0.62745098039215685" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -155,7 +155,7 @@
                                                     <action selector="loginButtonTapped:" destination="pbh-Gf-PUO" eventType="touchUpInside" id="E7e-om-uBf"/>
                                                 </connections>
                                             </button>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sBa-BV-gKe" customClass="MKTextField" customModule="MaterialKit">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sBa-BV-gKe" customClass="MKTextField" customModule="MaterialKit">
                                                 <rect key="frame" x="30" y="145" width="260" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="sfF-99-D5E"/>
@@ -193,7 +193,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tgj-rS-MHj" customClass="MKTextField" customModule="MaterialKit">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tgj-rS-MHj" customClass="MKTextField" customModule="MaterialKit">
                                                 <rect key="frame" x="30" y="195" width="260" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="Otk-e5-UmA"/>
@@ -397,19 +397,19 @@
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qV0-HQ-XnI">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qV0-HQ-XnI">
                                                 <rect key="frame" x="65" y="335" width="33" height="20"/>
                                                 <fontDescription key="fontDescription" name="Eurofurencelight" family="eurofurence light" pointSize="19"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMw-fP-9O6">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMw-fP-9O6">
                                                 <rect key="frame" x="177" y="335" width="37" height="20"/>
                                                 <fontDescription key="fontDescription" name="Eurofurencelight" family="eurofurence light" pointSize="19"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aU-AI-8rL" customClass="DLRadioButton">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aU-AI-8rL" customClass="DLRadioButton">
                                                 <rect key="frame" x="142" y="330" width="30" height="30"/>
                                                 <state key="normal" title="Button"/>
                                                 <userDefinedRuntimeAttributes>
@@ -529,7 +529,7 @@
         <!--View Controller-->
         <scene sceneID="Kmb-ma-wk3">
             <objects>
-                <viewController id="9Vy-Dt-wuQ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeViewController" id="9Vy-Dt-wuQ" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rrf-rp-ulb"/>
                         <viewControllerLayoutGuide type="bottom" id="0Or-pp-YXK"/>
@@ -543,7 +543,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KpB-cE-6Xp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2441" y="452"/>
+            <point key="canvasLocation" x="2282" y="503"/>
+        </scene>
+        <!--Side Menu Table View Controller-->
+        <scene sceneID="P4Q-6d-Kh0">
+            <objects>
+                <tableViewController storyboardIdentifier="sideMenuTableViewController" id="u8f-1E-p6d" customClass="SideMenuTableViewController" customModule="amico" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="YfU-hd-BfW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="G3d-Dr-vDa">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G3d-Dr-vDa" id="7U1-XG-NZ6">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="u8f-1E-p6d" id="lJy-gR-EdH"/>
+                            <outlet property="delegate" destination="u8f-1E-p6d" id="TOo-Le-Gjo"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M8p-zq-sCW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2784" y="503"/>
         </scene>
         <!--Reset Password-->
         <scene sceneID="WG2-hN-gyv">

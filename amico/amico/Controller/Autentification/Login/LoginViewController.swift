@@ -1,5 +1,3 @@
-
-
 //
 //  LoginViewController.swift
 //  amico
@@ -34,11 +32,7 @@ private extension LoginViewController {
         emailTextField?.layer.borderWidth = 0
         passwordTextField?.layer.borderWidth = 0
         loginButton?.layer.cornerRadius = (loginButton?.bounds.height ?? 0) / 2
-
-        let titleDict: Dictionary<String,AnyObject> = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name: "eurofurence light", size: 26)! ]
-        self.navigationController?.navigationBar.titleTextAttributes = titleDict
-        self.navigationController?.navigationBar.barTintColor = UIColor.AmicoNavBarGreenColor()
-        navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
+        self.navigationController?.navigationBar.barTintColor = UIColor.AmicoNavBarGreenColor
     }
 }
 
@@ -47,10 +41,9 @@ extension LoginViewController {
     @IBAction func loginButtonTapped(sender: UIButton) {
     }
 
+    @IBAction func signUpButtonTapped(sender: UIButton) {
+    }
+
     @IBAction func forgotPassordButtonTapped(sender: UIButton) {
-        guard let forgotPasswordViewController = storyboard?.instantiateViewControllerWithIdentifier(ForgotPasswordViewController.storyboardId) else {
-            return
-        }
-        navigationController?.pushViewController(forgotPasswordViewController, animated: true)
     }
 }

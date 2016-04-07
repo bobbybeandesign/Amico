@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043214EB1CB5434F00A37712 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043214E91CB5434F00A37712 /* SideMenuTableViewCell.swift */; };
+		043214EC1CB5434F00A37712 /* SideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043214EA1CB5434F00A37712 /* SideMenuTableViewCell.xib */; };
+		043214F01CB5458300A37712 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043214EF1CB5458300A37712 /* SideMenuTableViewController.swift */; };
+		043214F21CB560E300A37712 /* SideMenuSeparatorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043214F11CB560E300A37712 /* SideMenuSeparatorHeader.swift */; };
+		043214F41CB5610E00A37712 /* SideMenuSeparatorHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043214F31CB5610E00A37712 /* SideMenuSeparatorHeader.xib */; };
 		0453133D1CB3AC3C006FC9C3 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453133C1CB3AC3C006FC9C3 /* StringExtension.swift */; };
 		045313501CB3F294006FC9C3 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045313471CB3F294006FC9C3 /* CreateAccountViewController.swift */; };
 		045313511CB3F294006FC9C3 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045313491CB3F294006FC9C3 /* ForgotPasswordViewController.swift */; };
 		045313521CB3F294006FC9C3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453134B1CB3F294006FC9C3 /* LoginViewController.swift */; };
 		045313531CB3F294006FC9C3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453134D1CB3F294006FC9C3 /* SignUpViewController.swift */; };
 		045313541CB3F294006FC9C3 /* WellcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453134F1CB3F294006FC9C3 /* WellcomeViewController.swift */; };
+		045313F91CB41329006FC9C3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045313F81CB41329006FC9C3 /* HomeViewController.swift */; };
+		045313FC1CB41998006FC9C3 /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045313FB1CB41998006FC9C3 /* SideMenuHeaderView.swift */; };
+		045313FE1CB419B5006FC9C3 /* SideMenuHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045313FD1CB419B5006FC9C3 /* SideMenuHeaderView.xib */; };
 		04545DE91CAE9AF500DDAA8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04545DDB1CAE9AF500DDAA8A /* Assets.xcassets */; };
 		04545DEA1CAE9AF500DDAA8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04545DE11CAE9AF500DDAA8A /* LaunchScreen.storyboard */; };
 		04545DEB1CAE9AF500DDAA8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04545DE31CAE9AF500DDAA8A /* Main.storyboard */; };
@@ -26,12 +34,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043214E91CB5434F00A37712 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuTableViewCell.swift; path = SideMenuCustomCell/SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		043214EA1CB5434F00A37712 /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SideMenuTableViewCell.xib; path = SideMenuCustomCell/SideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		043214EF1CB5458300A37712 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuTableViewController.swift; path = SideMenu/SideMenuTableViewController.swift; sourceTree = "<group>"; };
+		043214F11CB560E300A37712 /* SideMenuSeparatorHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuSeparatorHeader.swift; path = SideMenuHeader/SideMenuSeparatorHeader.swift; sourceTree = "<group>"; };
+		043214F31CB5610E00A37712 /* SideMenuSeparatorHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SideMenuSeparatorHeader.xib; path = SideMenuHeader/SideMenuSeparatorHeader.xib; sourceTree = "<group>"; };
 		0453133C1CB3AC3C006FC9C3 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		045313471CB3F294006FC9C3 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		045313491CB3F294006FC9C3 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		0453134B1CB3F294006FC9C3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0453134D1CB3F294006FC9C3 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0453134F1CB3F294006FC9C3 /* WellcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WellcomeViewController.swift; sourceTree = "<group>"; };
+		045313F81CB41329006FC9C3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Home/HomeViewController.swift; sourceTree = "<group>"; };
+		045313FB1CB41998006FC9C3 /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuHeaderView.swift; path = SideMenuHeader/SideMenuHeaderView.swift; sourceTree = "<group>"; };
+		045313FD1CB419B5006FC9C3 /* SideMenuHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SideMenuHeaderView.xib; path = SideMenuHeader/SideMenuHeaderView.xib; sourceTree = "<group>"; };
 		04545DDB1CAE9AF500DDAA8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04545DE21CAE9AF500DDAA8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04545DE41CAE9AF500DDAA8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +76,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043214ED1CB5435500A37712 /* SideMenuCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				043214E91CB5434F00A37712 /* SideMenuTableViewCell.swift */,
+				043214EA1CB5434F00A37712 /* SideMenuTableViewCell.xib */,
+			);
+			name = SideMenuCustomCell;
+			sourceTree = "<group>";
+		};
+		043214EE1CB5454D00A37712 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				043214EF1CB5458300A37712 /* SideMenuTableViewController.swift */,
+			);
+			name = SideMenu;
+			sourceTree = "<group>";
+		};
 		045313451CB3F294006FC9C3 /* Autentification */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +145,25 @@
 			path = Wellcome;
 			sourceTree = "<group>";
 		};
+		045313F71CB41317006FC9C3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				045313F81CB41329006FC9C3 /* HomeViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		045313FA1CB418A4006FC9C3 /* SideMenuHeader */ = {
+			isa = PBXGroup;
+			children = (
+				045313FB1CB41998006FC9C3 /* SideMenuHeaderView.swift */,
+				045313FD1CB419B5006FC9C3 /* SideMenuHeaderView.xib */,
+				043214F11CB560E300A37712 /* SideMenuSeparatorHeader.swift */,
+				043214F31CB5610E00A37712 /* SideMenuSeparatorHeader.xib */,
+			);
+			name = SideMenuHeader;
+			sourceTree = "<group>";
+		};
 		04545DDA1CAE9AF500DDAA8A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +177,8 @@
 		04545DDC1CAE9AF500DDAA8A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				043214EE1CB5454D00A37712 /* SideMenu */,
+				045313F71CB41317006FC9C3 /* Home */,
 				045313451CB3F294006FC9C3 /* Autentification */,
 			);
 			path = Controller;
@@ -174,6 +228,8 @@
 		04545DE81CAE9AF500DDAA8A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				043214ED1CB5435500A37712 /* SideMenuCustomCell */,
+				045313FA1CB418A4006FC9C3 /* SideMenuHeader */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,11 +269,11 @@
 			children = (
 				04545DDF1CAE9AF500DDAA8A /* Model */,
 				04545DDC1CAE9AF500DDAA8A /* Controller */,
+				04545DE81CAE9AF500DDAA8A /* View */,
 				04545DDD1CAE9AF500DDAA8A /* Extensions */,
 				04545DDE1CAE9AF500DDAA8A /* Helpers */,
 				04545DE01CAE9AF500DDAA8A /* Storyboards */,
 				04545DE51CAE9AF500DDAA8A /* Supporting */,
-				04545DE81CAE9AF500DDAA8A /* View */,
 			);
 			path = amico;
 			sourceTree = "<group>";
@@ -304,8 +360,11 @@
 				049AD0521CAEAF2D0049A62A /* Roboto-Regular.ttf in Resources */,
 				04545DEB1CAE9AF500DDAA8A /* Main.storyboard in Resources */,
 				04545DE91CAE9AF500DDAA8A /* Assets.xcassets in Resources */,
+				045313FE1CB419B5006FC9C3 /* SideMenuHeaderView.xib in Resources */,
 				049AD0511CAEAF2D0049A62A /* Roboto-Light.ttf in Resources */,
+				043214EC1CB5434F00A37712 /* SideMenuTableViewCell.xib in Resources */,
 				04545DEA1CAE9AF500DDAA8A /* LaunchScreen.storyboard in Resources */,
+				043214F41CB5610E00A37712 /* SideMenuSeparatorHeader.xib in Resources */,
 				049AD04F1CAEAF2D0049A62A /* eurof35.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,8 +429,13 @@
 				045313541CB3F294006FC9C3 /* WellcomeViewController.swift in Sources */,
 				045313501CB3F294006FC9C3 /* CreateAccountViewController.swift in Sources */,
 				0453133D1CB3AC3C006FC9C3 /* StringExtension.swift in Sources */,
+				045313FC1CB41998006FC9C3 /* SideMenuHeaderView.swift in Sources */,
+				045313F91CB41329006FC9C3 /* HomeViewController.swift in Sources */,
+				043214F01CB5458300A37712 /* SideMenuTableViewController.swift in Sources */,
 				045313511CB3F294006FC9C3 /* ForgotPasswordViewController.swift in Sources */,
 				04545DEC1CAE9AF500DDAA8A /* AppDelegate.swift in Sources */,
+				043214EB1CB5434F00A37712 /* SideMenuTableViewCell.swift in Sources */,
+				043214F21CB560E300A37712 /* SideMenuSeparatorHeader.swift in Sources */,
 				04C9C8CB1CB2B75A00EC4F4F /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

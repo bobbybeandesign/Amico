@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Material
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let homeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("homeViewController")
+        let sideMenuViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(SideMenuTableViewController.storyboardId)
+
+        let rootVC = SideNavigationController(rootViewController: homeViewController, leftViewController: sideMenuViewController)
+        rootVC.setLeftViewWidth(300, hidden: true, animated: true)
+        window?.rootViewController = rootVC
+
         return true
     }
 }
