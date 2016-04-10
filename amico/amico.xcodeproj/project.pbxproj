@@ -30,6 +30,7 @@
 		049AD0511CAEAF2D0049A62A /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049AD04C1CAEAF2D0049A62A /* Roboto-Light.ttf */; };
 		049AD0521CAEAF2D0049A62A /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049AD04D1CAEAF2D0049A62A /* Roboto-Regular.ttf */; };
 		04C9C8CB1CB2B75A00EC4F4F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9C8CA1CB2B75A00EC4F4F /* UIColorExtension.swift */; };
+		04EBA2281CB6966800703B25 /* AppSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBA2271CB6966800703B25 /* AppSettingsTableViewController.swift */; };
 		6845A86737001C0863EE9FC0 /* Pods_amico.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A2E3FC4B9724ECFECF4C44 /* Pods_amico.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		049AD04C1CAEAF2D0049A62A /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		049AD04D1CAEAF2D0049A62A /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		04C9C8CA1CB2B75A00EC4F4F /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		04EBA2271CB6966800703B25 /* AppSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppSettingsTableViewController.swift; path = AppSettings/AppSettingsTableViewController.swift; sourceTree = "<group>"; };
 		532986C5757042C1E0F310E8 /* Pods-amico.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amico.debug.xcconfig"; path = "Pods/Target Support Files/Pods-amico/Pods-amico.debug.xcconfig"; sourceTree = "<group>"; };
 		746DA0EA1CAD23B9007A902D /* amico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C639E95A9B9C68ECE05D2648 /* Pods-amico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amico.release.xcconfig"; path = "Pods/Target Support Files/Pods-amico/Pods-amico.release.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		04545DDC1CAE9AF500DDAA8A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04EBA2261CB6964C00703B25 /* AppSettings */,
 				043214EE1CB5454D00A37712 /* SideMenu */,
 				045313F71CB41317006FC9C3 /* Home */,
 				045313451CB3F294006FC9C3 /* Autentification */,
@@ -243,6 +246,14 @@
 				049AD04D1CAEAF2D0049A62A /* Roboto-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		04EBA2261CB6964C00703B25 /* AppSettings */ = {
+			isa = PBXGroup;
+			children = (
+				04EBA2271CB6966800703B25 /* AppSettingsTableViewController.swift */,
+			);
+			name = AppSettings;
 			sourceTree = "<group>";
 		};
 		746DA0E11CAD23B9007A902D = {
@@ -434,6 +445,7 @@
 				043214F01CB5458300A37712 /* SideMenuTableViewController.swift in Sources */,
 				045313511CB3F294006FC9C3 /* ForgotPasswordViewController.swift in Sources */,
 				04545DEC1CAE9AF500DDAA8A /* AppDelegate.swift in Sources */,
+				04EBA2281CB6966800703B25 /* AppSettingsTableViewController.swift in Sources */,
 				043214EB1CB5434F00A37712 /* SideMenuTableViewCell.swift in Sources */,
 				043214F21CB560E300A37712 /* SideMenuSeparatorHeader.swift in Sources */,
 				04C9C8CB1CB2B75A00EC4F4F /* UIColorExtension.swift in Sources */,
