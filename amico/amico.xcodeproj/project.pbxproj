@@ -12,6 +12,7 @@
 		043214F01CB5458300A37712 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043214EF1CB5458300A37712 /* SideMenuTableViewController.swift */; };
 		043214F21CB560E300A37712 /* SideMenuSeparatorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043214F11CB560E300A37712 /* SideMenuSeparatorHeader.swift */; };
 		043214F41CB5610E00A37712 /* SideMenuSeparatorHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043214F31CB5610E00A37712 /* SideMenuSeparatorHeader.xib */; };
+		044EE3821CBB6D4F00D219FC /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044EE3811CBB6D4F00D219FC /* GlobalConstants.swift */; };
 		0453133D1CB3AC3C006FC9C3 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453133C1CB3AC3C006FC9C3 /* StringExtension.swift */; };
 		045313501CB3F294006FC9C3 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045313471CB3F294006FC9C3 /* CreateAccountViewController.swift */; };
 		045313511CB3F294006FC9C3 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045313491CB3F294006FC9C3 /* ForgotPasswordViewController.swift */; };
@@ -29,8 +30,11 @@
 		049AD0501CAEAF2D0049A62A /* eurof55.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049AD04B1CAEAF2D0049A62A /* eurof55.ttf */; };
 		049AD0511CAEAF2D0049A62A /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049AD04C1CAEAF2D0049A62A /* Roboto-Light.ttf */; };
 		049AD0521CAEAF2D0049A62A /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049AD04D1CAEAF2D0049A62A /* Roboto-Regular.ttf */; };
+		04BFC73B1CB7D59B006D7C54 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BFC73A1CB7D59B006D7C54 /* ContactUsViewController.swift */; };
+		04BFC73E1CB7D868006D7C54 /* AmicoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BFC73D1CB7D868006D7C54 /* AmicoTextView.swift */; };
 		04C9C8CB1CB2B75A00EC4F4F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9C8CA1CB2B75A00EC4F4F /* UIColorExtension.swift */; };
 		04EBA2281CB6966800703B25 /* AppSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBA2271CB6966800703B25 /* AppSettingsTableViewController.swift */; };
+		04ECDA291CB7F406002F55C5 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECDA281CB7F406002F55C5 /* UIAlertControllerExtension.swift */; };
 		6845A86737001C0863EE9FC0 /* Pods_amico.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A2E3FC4B9724ECFECF4C44 /* Pods_amico.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +44,7 @@
 		043214EF1CB5458300A37712 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuTableViewController.swift; path = SideMenu/SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		043214F11CB560E300A37712 /* SideMenuSeparatorHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuSeparatorHeader.swift; path = SideMenuHeader/SideMenuSeparatorHeader.swift; sourceTree = "<group>"; };
 		043214F31CB5610E00A37712 /* SideMenuSeparatorHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SideMenuSeparatorHeader.xib; path = SideMenuHeader/SideMenuSeparatorHeader.xib; sourceTree = "<group>"; };
+		044EE3811CBB6D4F00D219FC /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalConstants.swift; path = GlobalConstants/GlobalConstants.swift; sourceTree = "<group>"; };
 		0453133C1CB3AC3C006FC9C3 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		045313471CB3F294006FC9C3 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		045313491CB3F294006FC9C3 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -58,8 +63,11 @@
 		049AD04B1CAEAF2D0049A62A /* eurof55.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = eurof55.ttf; sourceTree = "<group>"; };
 		049AD04C1CAEAF2D0049A62A /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		049AD04D1CAEAF2D0049A62A /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		04BFC73A1CB7D59B006D7C54 /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactUsViewController.swift; path = ContactUs/ContactUsViewController.swift; sourceTree = "<group>"; };
+		04BFC73D1CB7D868006D7C54 /* AmicoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AmicoTextView.swift; path = CustomControls/AmicoTextView.swift; sourceTree = "<group>"; };
 		04C9C8CA1CB2B75A00EC4F4F /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		04EBA2271CB6966800703B25 /* AppSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppSettingsTableViewController.swift; path = AppSettings/AppSettingsTableViewController.swift; sourceTree = "<group>"; };
+		04ECDA281CB7F406002F55C5 /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
 		532986C5757042C1E0F310E8 /* Pods-amico.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amico.debug.xcconfig"; path = "Pods/Target Support Files/Pods-amico/Pods-amico.debug.xcconfig"; sourceTree = "<group>"; };
 		746DA0EA1CAD23B9007A902D /* amico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C639E95A9B9C68ECE05D2648 /* Pods-amico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amico.release.xcconfig"; path = "Pods/Target Support Files/Pods-amico/Pods-amico.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +187,7 @@
 		04545DDC1CAE9AF500DDAA8A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04BFC7391CB7D583006D7C54 /* ContactUs */,
 				04EBA2261CB6964C00703B25 /* AppSettings */,
 				043214EE1CB5454D00A37712 /* SideMenu */,
 				045313F71CB41317006FC9C3 /* Home */,
@@ -190,6 +199,7 @@
 		04545DDD1CAE9AF500DDAA8A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				04ECDA281CB7F406002F55C5 /* UIAlertControllerExtension.swift */,
 				04C9C8CA1CB2B75A00EC4F4F /* UIColorExtension.swift */,
 				0453133C1CB3AC3C006FC9C3 /* StringExtension.swift */,
 			);
@@ -199,6 +209,8 @@
 		04545DDE1CAE9AF500DDAA8A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				04BFC73C1CB7D847006D7C54 /* CustomControls */,
+				044EE3811CBB6D4F00D219FC /* GlobalConstants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -246,6 +258,22 @@
 				049AD04D1CAEAF2D0049A62A /* Roboto-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		04BFC7391CB7D583006D7C54 /* ContactUs */ = {
+			isa = PBXGroup;
+			children = (
+				04BFC73A1CB7D59B006D7C54 /* ContactUsViewController.swift */,
+			);
+			name = ContactUs;
+			sourceTree = "<group>";
+		};
+		04BFC73C1CB7D847006D7C54 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				04BFC73D1CB7D868006D7C54 /* AmicoTextView.swift */,
+			);
+			name = CustomControls;
 			sourceTree = "<group>";
 		};
 		04EBA2261CB6964C00703B25 /* AppSettings */ = {
@@ -437,14 +465,18 @@
 			files = (
 				045313521CB3F294006FC9C3 /* LoginViewController.swift in Sources */,
 				045313531CB3F294006FC9C3 /* SignUpViewController.swift in Sources */,
+				04BFC73B1CB7D59B006D7C54 /* ContactUsViewController.swift in Sources */,
 				045313541CB3F294006FC9C3 /* WellcomeViewController.swift in Sources */,
 				045313501CB3F294006FC9C3 /* CreateAccountViewController.swift in Sources */,
 				0453133D1CB3AC3C006FC9C3 /* StringExtension.swift in Sources */,
 				045313FC1CB41998006FC9C3 /* SideMenuHeaderView.swift in Sources */,
+				04BFC73E1CB7D868006D7C54 /* AmicoTextView.swift in Sources */,
 				045313F91CB41329006FC9C3 /* HomeViewController.swift in Sources */,
 				043214F01CB5458300A37712 /* SideMenuTableViewController.swift in Sources */,
+				044EE3821CBB6D4F00D219FC /* GlobalConstants.swift in Sources */,
 				045313511CB3F294006FC9C3 /* ForgotPasswordViewController.swift in Sources */,
 				04545DEC1CAE9AF500DDAA8A /* AppDelegate.swift in Sources */,
+				04ECDA291CB7F406002F55C5 /* UIAlertControllerExtension.swift in Sources */,
 				04EBA2281CB6966800703B25 /* AppSettingsTableViewController.swift in Sources */,
 				043214EB1CB5434F00A37712 /* SideMenuTableViewCell.swift in Sources */,
 				043214F21CB560E300A37712 /* SideMenuSeparatorHeader.swift in Sources */,
