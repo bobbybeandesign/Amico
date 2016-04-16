@@ -1,19 +1,44 @@
 PODS:
+  - ActionSheetPicker-3.0 (2.0.5)
+  - Alamofire (3.3.1)
+  - AlamofireObjectMapper (3.0.0):
+    - Alamofire (~> 3.2)
+    - ObjectMapper (~> 1.0)
   - DLRadioButton (1.4.7)
+  - FXKeychain (1.5.3)
   - Material (1.38.4)
   - MaterialKit (0.4)
+  - ObjectMapper (1.2.0)
+  - SVProgressHUD (2.0.3)
+  - TagListView (1.0.0)
   - TPKeyboardAvoiding (1.2.11)
+  - TTRangeSlider (1.0.3)
 
 DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - Alamofire
+  - AlamofireObjectMapper
   - DLRadioButton
+  - FXKeychain (~> 1.5)
   - Material
   - MaterialKit (~> 0.4)
+  - SVProgressHUD
+  - TagListView (~> 1.0)
   - TPKeyboardAvoiding
+  - TTRangeSlider
 
 SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: 8312778b6815578e6a86d630fbcf31dc94c534e7
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  AlamofireObjectMapper: 2d16585d06177be0116d76de73497e77437798af
   DLRadioButton: c75e398a8ad7ddef4e9e91dc423073f01a1f4cc2
+  FXKeychain: 2fe54573946ffef634f4e2a2851e6c8f4ea15e76
   Material: f3357eb593edaaeb5bf4243a8f9209d44a779d9e
   MaterialKit: 2e5267bcf410b82793f2b92d2111f8ae4ed2c3f2
+  ObjectMapper: b1e9c7c8a9f6400b72690c80072c131504caa66f
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  TagListView: 6bf4bded034c4c90b1e90d8cd3d8e1d852dba0a8
   TPKeyboardAvoiding: e5ce146b313de063957bfa75a13f1e9b0ff18ab7
+  TTRangeSlider: a12d0ac242a785cf96d4c7dacfe07e42a161251e
 
 COCOAPODS: 0.39.0

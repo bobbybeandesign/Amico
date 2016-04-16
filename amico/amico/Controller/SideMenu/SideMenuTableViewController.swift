@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Material
 
 enum LeftMenuItem: String {
     case Discovery = "Discovery Preferences"
@@ -120,6 +121,15 @@ extension SideMenuTableViewController {
 
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 50
+    }
+
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        guard let vc = storyboard?.instantiateViewControllerWithIdentifier(DiscoveryPreferencesTableViewController.storyboardId) as? DiscoveryPreferencesTableViewController else {
+            return
+        }
+
+       let navigationController = (self.parentViewController as? SideNavigationController)?.rootViewController as? UINavigationController
+       navigationController?.pushViewController(vc, animated: true)
     }
 }
 

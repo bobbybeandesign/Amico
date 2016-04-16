@@ -8,6 +8,7 @@
 
 import UIKit
 import MaterialKit
+import SVProgressHUD
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     static let storyboardId = "loginViewController"
@@ -34,11 +35,60 @@ private extension LoginViewController {
         self.navigationController?.navigationBar.barTintColor = UIColor.AmicoNavBarGreenColor()
         navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
     }
+
+    //MARK:- Helpers
+    func userHasEnteredValidInformation() -> Bool {
+        guard let email = emailTextField?.text,
+            let password = passwordTextField?.text?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet()) else {
+                UIAlertController.showSimpleAlertViewWithText("Please try to log in again!".localized,
+                                                              title: "Ouch".localized,
+                                                              controller: self,
+                                                              completion: nil,
+                                                              alertHandler: nil)
+                return false
+        }
+
+        if !email.isEmail() {
+            UIAlertController.showSimpleAlertViewWithText("Enter a valid email address please.".localized,
+                                                          title: "Invalid E-Mail".localized,
+                                                          controller: self, completion: nil,
+                                                          alertHandler: nil)
+            return false
+        }
+
+        if password.isEmpty {
+            UIAlertController.showSimpleAlertViewWithText("Password must not be empty.".localized,
+                                                          title: "Empty Password".localized,
+                                                          controller: self,
+                                                          completion: nil,
+                                                          alertHandler: nil)
+            return false
+        }
+
+        return true
+    }
 }
 
 extension LoginViewController {
     //MARK:- Action Buttons
     @IBAction func loginButtonTapped(sender: UIButton) {
+        if !userHasEnteredValidInformation() {
+            return
+        }
+
+        SVProgressHUD.show()
+        AmicoAPI.sharedInstance.signInUser(emailTextField!.text!, password: passwordTextField!.text!) { success, token in
+           SVProgressHUD.dismiss()
+            if success && token?.isEmpty == false {
+                self.dismissViewControllerAnimated(true, completion: nil)
+            } else {
+                UIAlertController.showSimpleAlertViewWithText("Please make sure to enter the right credentials.".localized,
+                                                              title: "Could not Login!".localized,
+                                                              controller: self,
+                                                              completion: nil,
+                                                              alertHandler: nil)
+            }
+        }
     }
 
     @IBAction func forgotPassordButtonTapped(sender: UIButton) {

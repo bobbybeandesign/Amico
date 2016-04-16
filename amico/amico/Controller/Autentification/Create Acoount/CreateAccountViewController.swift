@@ -8,6 +8,7 @@
 
 import UIKit
 import MaterialKit
+import DLRadioButton
 
 final class CreateAccountViewController: UIViewController {
     static let storyboardId = "createAccountViewController"
@@ -17,7 +18,11 @@ final class CreateAccountViewController: UIViewController {
     @IBOutlet private weak var surnameTextField: MKTextField?
     @IBOutlet private weak var createAccountButton: UIButton?
     @IBOutlet private weak var datePicker: UIDatePicker?
+    @IBOutlet private weak var maleRadioButton: DLRadioButton?
+    @IBOutlet private weak var femaleRadioButton: DLRadioButton?
+
     private var imagePicker = UIImagePickerController()
+    private var gender: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +33,6 @@ final class CreateAccountViewController: UIViewController {
 private extension CreateAccountViewController {
     //MARK:- UI Setup
     func setupUI() {
-        //datepicker
-        datePicker?.addTarget(self, action: #selector(CreateAccountViewController.datePickerValueChanged), forControlEvents: .ValueChanged)
-
         //buttons
         createAccountButton?.layer.cornerRadius = (createAccountButton?.bounds.height ?? 0) / 2
         userPictureButton?.layer.cornerRadius = (userPictureButton?.bounds.height ?? 0) / 2
@@ -47,10 +49,7 @@ private extension CreateAccountViewController {
 }
 
 extension CreateAccountViewController {
-    //MARK:- Selectors
-    func datePickerValueChanged() {
-    }
-
+    //MARK:- Action Buttons
     @IBAction func userPictureButtonTapped(sender: AnyObject) {
         let alert = UIAlertController(title: "Pick Source".localized, message: "Chose between a library and Camera".localized, preferredStyle: .Alert)
         let cameraAction = UIAlertAction(title: "Camera".localized, style: .Default) { alertAction in
@@ -77,6 +76,24 @@ extension CreateAccountViewController {
         alert.addAction(cancelAction)
         self.presentViewController(alert, animated: true, completion: nil)
     }
+
+    @IBAction func createAccountButtonTapped(sender: UIButton) {
+        if !userHasProvidedEnoughInformation() {
+            return
+        }
+        let formater = NSDateFormatter()
+        formater.dateFormat = "YYYY-MM-DD"
+        let date = formater.stringFromDate(datePicker!.date)
+        AmicoAPI.sharedInstance.editUserProfile(gender, about: nil, employments: nil, educations: nil, interests: nil, birthDay: date) { success, token in
+            if success && token?.isEmpty == false {
+                self.dismissViewControllerAnimated(true, completion: nil)
+            }
+        }
+    }
+
+    @IBAction func genderSelectedButtonTapped(sender: DLRadioButton) {
+        gender = sender == maleRadioButton ? "m" : "f"
+    }
 }
 
 extension CreateAccountViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -86,3 +103,58 @@ extension CreateAccountViewController: UIImagePickerControllerDelegate, UINaviga
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
 }
+
+private extension CreateAccountViewController {
+    //MARK: Helpers
+    func userHasProvidedEnoughInformation() -> Bool {
+        guard let name = nameTextField?.text,
+              let surname = surnameTextField?.text else {
+                return false
+        }
+
+        let birthday = datePicker?.date
+
+        if gender == nil {
+            UIAlertController.showSimpleAlertViewWithText("Please select your gender".localized,
+                                                          title: "Ouch".localized,
+                                                          controller: self,
+                                                          completion: nil,
+                                                          alertHandler: nil)
+            return false
+        }
+
+        if birthday?.age < 18 && birthday != nil {
+                UIAlertController.showSimpleAlertViewWithText("You must be at least 18, to use Friends".localized,
+                                                              title: "Ouch".localized,
+                                                              controller: self,
+                                                              completion: nil,
+                                                              alertHandler: nil)
+                return false
+
+        }
+
+        if name.isEmpty {
+            UIAlertController.showSimpleAlertViewWithText("Please enter your name".localized,
+                                                          title: "Ouch".localized,
+                                                          controller: self,
+                                                          completion: nil,
+                                                          alertHandler: nil)
+            return false
+        }
+
+        if surname.isEmpty {
+            UIAlertController.showSimpleAlertViewWithText("Please enter your surname".localized,
+                                                          title: "Ouch".localized,
+                                                          controller: self,
+                                                          completion: nil,
+                                                          alertHandler: nil)
+            return false
+        }
+
+        return true
+    }
+}
+
+
+
+

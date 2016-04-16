@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040A3FF31CBB7D4A00D5CBC9 /* DiscoveryPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A3FF21CBB7D4A00D5CBC9 /* DiscoveryPreferences.swift */; };
+		040A3FF71CBB918C00D5CBC9 /* EducationMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A3FF51CBB918C00D5CBC9 /* EducationMenuTableViewCell.swift */; };
+		040A3FF81CBB918C00D5CBC9 /* EducationMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040A3FF61CBB918C00D5CBC9 /* EducationMenuTableViewCell.xib */; };
 		043214EB1CB5434F00A37712 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043214E91CB5434F00A37712 /* SideMenuTableViewCell.swift */; };
 		043214EC1CB5434F00A37712 /* SideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043214EA1CB5434F00A37712 /* SideMenuTableViewCell.xib */; };
 		043214F01CB5458300A37712 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043214EF1CB5458300A37712 /* SideMenuTableViewController.swift */; };
@@ -35,10 +38,16 @@
 		04C9C8CB1CB2B75A00EC4F4F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9C8CA1CB2B75A00EC4F4F /* UIColorExtension.swift */; };
 		04EBA2281CB6966800703B25 /* AppSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBA2271CB6966800703B25 /* AppSettingsTableViewController.swift */; };
 		04ECDA291CB7F406002F55C5 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECDA281CB7F406002F55C5 /* UIAlertControllerExtension.swift */; };
+		04F5A81A1CBD1C0E004ED9FD /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A8191CBD1C0E004ED9FD /* ApiRouter.swift */; };
+		04F5A81D1CBD2651004ED9FD /* AmicoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A81C1CBD2651004ED9FD /* AmicoAPI.swift */; };
+		04F5A81F1CBD5EBE004ED9FD /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A81E1CBD5EBE004ED9FD /* NSDateExtension.swift */; };
 		6845A86737001C0863EE9FC0 /* Pods_amico.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A2E3FC4B9724ECFECF4C44 /* Pods_amico.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040A3FF21CBB7D4A00D5CBC9 /* DiscoveryPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiscoveryPreferences.swift; path = DiscoveryPreferences/DiscoveryPreferences.swift; sourceTree = "<group>"; };
+		040A3FF51CBB918C00D5CBC9 /* EducationMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EducationMenuTableViewCell.swift; path = EducationMenuCell/EducationMenuTableViewCell.swift; sourceTree = "<group>"; };
+		040A3FF61CBB918C00D5CBC9 /* EducationMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EducationMenuTableViewCell.xib; path = EducationMenuCell/EducationMenuTableViewCell.xib; sourceTree = "<group>"; };
 		043214E91CB5434F00A37712 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuTableViewCell.swift; path = SideMenuCustomCell/SideMenuTableViewCell.swift; sourceTree = "<group>"; };
 		043214EA1CB5434F00A37712 /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SideMenuTableViewCell.xib; path = SideMenuCustomCell/SideMenuTableViewCell.xib; sourceTree = "<group>"; };
 		043214EF1CB5458300A37712 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuTableViewController.swift; path = SideMenu/SideMenuTableViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +77,9 @@
 		04C9C8CA1CB2B75A00EC4F4F /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		04EBA2271CB6966800703B25 /* AppSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppSettingsTableViewController.swift; path = AppSettings/AppSettingsTableViewController.swift; sourceTree = "<group>"; };
 		04ECDA281CB7F406002F55C5 /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		04F5A8191CBD1C0E004ED9FD /* ApiRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiRouter.swift; path = NetworkLayer/ApiRouter.swift; sourceTree = "<group>"; };
+		04F5A81C1CBD2651004ED9FD /* AmicoAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AmicoAPI.swift; path = API/AmicoAPI.swift; sourceTree = "<group>"; };
+		04F5A81E1CBD5EBE004ED9FD /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		532986C5757042C1E0F310E8 /* Pods-amico.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amico.debug.xcconfig"; path = "Pods/Target Support Files/Pods-amico/Pods-amico.debug.xcconfig"; sourceTree = "<group>"; };
 		746DA0EA1CAD23B9007A902D /* amico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C639E95A9B9C68ECE05D2648 /* Pods-amico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amico.release.xcconfig"; path = "Pods/Target Support Files/Pods-amico/Pods-amico.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +98,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040A3FF11CBB7D2600D5CBC9 /* DiscoveryPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				040A3FF21CBB7D4A00D5CBC9 /* DiscoveryPreferences.swift */,
+			);
+			name = DiscoveryPreferences;
+			sourceTree = "<group>";
+		};
+		040A3FF41CBB914C00D5CBC9 /* EducationMenuCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				040A3FF51CBB918C00D5CBC9 /* EducationMenuTableViewCell.swift */,
+				040A3FF61CBB918C00D5CBC9 /* EducationMenuTableViewCell.xib */,
+			);
+			name = EducationMenuCustomCell;
+			sourceTree = "<group>";
+		};
 		043214ED1CB5435500A37712 /* SideMenuCustomCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +216,7 @@
 		04545DDC1CAE9AF500DDAA8A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				040A3FF11CBB7D2600D5CBC9 /* DiscoveryPreferences */,
 				04BFC7391CB7D583006D7C54 /* ContactUs */,
 				04EBA2261CB6964C00703B25 /* AppSettings */,
 				043214EE1CB5454D00A37712 /* SideMenu */,
@@ -202,6 +232,7 @@
 				04ECDA281CB7F406002F55C5 /* UIAlertControllerExtension.swift */,
 				04C9C8CA1CB2B75A00EC4F4F /* UIColorExtension.swift */,
 				0453133C1CB3AC3C006FC9C3 /* StringExtension.swift */,
+				04F5A81E1CBD5EBE004ED9FD /* NSDateExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -243,6 +274,7 @@
 		04545DE81CAE9AF500DDAA8A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				040A3FF41CBB914C00D5CBC9 /* EducationMenuCustomCell */,
 				043214ED1CB5435500A37712 /* SideMenuCustomCell */,
 				045313FA1CB418A4006FC9C3 /* SideMenuHeader */,
 			);
@@ -284,6 +316,22 @@
 			name = AppSettings;
 			sourceTree = "<group>";
 		};
+		04F5A8181CBD1BD1004ED9FD /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				04F5A8191CBD1C0E004ED9FD /* ApiRouter.swift */,
+			);
+			name = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		04F5A81B1CBD2631004ED9FD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				04F5A81C1CBD2651004ED9FD /* AmicoAPI.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 		746DA0E11CAD23B9007A902D = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +354,8 @@
 		746DA0EC1CAD23B9007A902D /* amico */ = {
 			isa = PBXGroup;
 			children = (
+				04F5A81B1CBD2631004ED9FD /* API */,
+				04F5A8181CBD1BD1004ED9FD /* NetworkLayer */,
 				04545DDF1CAE9AF500DDAA8A /* Model */,
 				04545DDC1CAE9AF500DDAA8A /* Controller */,
 				04545DE81CAE9AF500DDAA8A /* View */,
@@ -395,6 +445,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040A3FF81CBB918C00D5CBC9 /* EducationMenuTableViewCell.xib in Resources */,
 				049AD0501CAEAF2D0049A62A /* eurof55.ttf in Resources */,
 				049AD0521CAEAF2D0049A62A /* Roboto-Regular.ttf in Resources */,
 				04545DEB1CAE9AF500DDAA8A /* Main.storyboard in Resources */,
@@ -467,15 +518,20 @@
 				045313531CB3F294006FC9C3 /* SignUpViewController.swift in Sources */,
 				04BFC73B1CB7D59B006D7C54 /* ContactUsViewController.swift in Sources */,
 				045313541CB3F294006FC9C3 /* WellcomeViewController.swift in Sources */,
+				04F5A81F1CBD5EBE004ED9FD /* NSDateExtension.swift in Sources */,
 				045313501CB3F294006FC9C3 /* CreateAccountViewController.swift in Sources */,
 				0453133D1CB3AC3C006FC9C3 /* StringExtension.swift in Sources */,
 				045313FC1CB41998006FC9C3 /* SideMenuHeaderView.swift in Sources */,
 				04BFC73E1CB7D868006D7C54 /* AmicoTextView.swift in Sources */,
+				04F5A81D1CBD2651004ED9FD /* AmicoAPI.swift in Sources */,
 				045313F91CB41329006FC9C3 /* HomeViewController.swift in Sources */,
 				043214F01CB5458300A37712 /* SideMenuTableViewController.swift in Sources */,
+				040A3FF31CBB7D4A00D5CBC9 /* DiscoveryPreferences.swift in Sources */,
 				044EE3821CBB6D4F00D219FC /* GlobalConstants.swift in Sources */,
 				045313511CB3F294006FC9C3 /* ForgotPasswordViewController.swift in Sources */,
+				04F5A81A1CBD1C0E004ED9FD /* ApiRouter.swift in Sources */,
 				04545DEC1CAE9AF500DDAA8A /* AppDelegate.swift in Sources */,
+				040A3FF71CBB918C00D5CBC9 /* EducationMenuTableViewCell.swift in Sources */,
 				04ECDA291CB7F406002F55C5 /* UIAlertControllerExtension.swift in Sources */,
 				04EBA2281CB6966800703B25 /* AppSettingsTableViewController.swift in Sources */,
 				043214EB1CB5434F00A37712 /* SideMenuTableViewCell.swift in Sources */,
@@ -596,7 +652,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = amico/Supporting/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(CONFIGURATION_BUILD_DIR)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.amico;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -609,7 +665,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = amico/Supporting/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(CONFIGURATION_BUILD_DIR)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.amico;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
