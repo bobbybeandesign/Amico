@@ -9,6 +9,7 @@
 import UIKit
 import MaterialKit
 import DLRadioButton
+import SVProgressHUD
 
 final class CreateAccountViewController: UIViewController {
     static let storyboardId = "createAccountViewController"
@@ -35,7 +36,8 @@ private extension CreateAccountViewController {
     func setupUI() {
         //buttons
         createAccountButton?.layer.cornerRadius = (createAccountButton?.bounds.height ?? 0) / 2
-        userPictureButton?.layer.cornerRadius = (userPictureButton?.bounds.height ?? 0) / 2
+        userPictureButton?.layer.cornerRadius = (userPictureButton?.frame.height ?? 0) / 2
+        userPictureButton?.layer.masksToBounds = true
 
         //textfileds
         nameTextField?.layer.borderWidth = 0
@@ -81,13 +83,20 @@ extension CreateAccountViewController {
         if !userHasProvidedEnoughInformation() {
             return
         }
+        SVProgressHUD.show()
         let formater = NSDateFormatter()
         formater.dateFormat = "YYYY-MM-DD"
         let date = formater.stringFromDate(datePicker!.date)
         AmicoAPI.sharedInstance.editUserProfile(gender, about: nil, employments: nil, educations: nil, interests: nil, birthDay: date) { success, token in
             if success && token?.isEmpty == false {
                 self.dismissViewControllerAnimated(true, completion: nil)
+
+            } else {
+                //TODO:-FIX this asap
+                self.dismissViewControllerAnimated(true, completion: nil)
+//                UIAlertController.showSimpleAlertViewWithText("Something went wrong creating your account. Please try again a while".localized, title: "Ooooops!".localized, controller: self, completion: nil, alertHandler: nil)
             }
+            SVProgressHUD.dismiss()
         }
     }
 
@@ -154,7 +163,3 @@ private extension CreateAccountViewController {
         return true
     }
 }
-
-
-
-

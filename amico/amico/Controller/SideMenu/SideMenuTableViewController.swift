@@ -56,11 +56,11 @@ final class SideMenuTableViewController: UITableViewController {
         LeftMenuItem.Matches,
         LeftMenuItem.Events,
         LeftMenuItem.PopUpVoice,
-    ]
+        ]
     private let secondaryMenuDatasource = [
         LeftMenuItem.AppSettings,
         LeftMenuItem.ContactUs,
-    ]
+        ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -124,12 +124,57 @@ extension SideMenuTableViewController {
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        guard let vc = storyboard?.instantiateViewControllerWithIdentifier(DiscoveryPreferencesTableViewController.storyboardId) as? DiscoveryPreferencesTableViewController else {
-            return
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        let navigationController = (self.parentViewController as? SideNavigationController)?.rootViewController as? UINavigationController
+        let sideNavigationController = self.parentViewController as? SideNavigationController
+        sideNavigationController?.closeLeftView()
+
+        switch indexPath.section {
+        case 0:
+
+            switch indexPath.row {
+            case primaryMenuDatasource.indexOf(.Discovery)!:
+                guard let viewController = storyboard?.instantiateViewControllerWithIdentifier(DiscoveryPreferencesTableViewController.storyboardId) as? DiscoveryPreferencesTableViewController else {
+                    return
+                }
+
+                navigationController?.pushViewController(viewController, animated: true)
+
+            case primaryMenuDatasource.indexOf(.Events)!:
+                guard let viewController = storyboard?.instantiateViewControllerWithIdentifier(EventListTableViewController.storyboardId) as? EventListTableViewController else {
+                    return
+                }
+
+                navigationController?.pushViewController(viewController, animated: true)
+
+            default:
+                break
+            }
+
+        case 1:
+            switch indexPath.row {
+            case secondaryMenuDatasource.indexOf(.ContactUs)!:
+                guard let viewController = storyboard?.instantiateViewControllerWithIdentifier(ContactUsViewController.storyboardId) as? ContactUsViewController else {
+                    return
+                }
+
+                navigationController?.pushViewController(viewController, animated: true)
+
+            case secondaryMenuDatasource.indexOf(.AppSettings)!:
+                guard let viewController = storyboard?.instantiateViewControllerWithIdentifier(AppSettingsTableViewController.storyboardId) as? AppSettingsTableViewController else {
+                    return
+                }
+
+                navigationController?.pushViewController(viewController, animated: true)
+
+            default:
+                break
+            }
+
+        default:
+            break
         }
 
-       let navigationController = (self.parentViewController as? SideNavigationController)?.rootViewController as? UINavigationController
-       navigationController?.pushViewController(vc, animated: true)
     }
 }
 

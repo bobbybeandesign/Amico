@@ -15,7 +15,6 @@ final class AppSettingsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupUI()
     }
 }
@@ -32,9 +31,20 @@ extension AppSettingsTableViewController {
     }
 
     @IBAction func signOutButtonTapped(sender: AnyObject) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
+        AmicoAPI.sharedInstance.logOutUser()
+        guard let authenticationnavigationController = storyboard?.instantiateViewControllerWithIdentifier("authenticationnavigationController") else {
+            return
+        }
+
+        self.navigationController?.presentViewController(authenticationnavigationController, animated: true, completion: nil)
     }
 
     @IBAction func deleteAccountButtonTapped(sender: UIButton) {
+    }
+
+    @IBAction func backButtonTapped(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
     }
 }
 

@@ -8,6 +8,7 @@
 
 import UIKit
 import MaterialKit
+import SVProgressHUD
 
 final class SignUpViewController: UIViewController {
     static let sotryboardId = "signUpViewController"
@@ -26,17 +27,25 @@ final class SignUpViewController: UIViewController {
 extension SignUpViewController {
     //MARK:- Action buttons
     @IBAction func signUpButtonTapped(sender: UIButton) {
+        SVProgressHUD.show()
         if !userHasEnteredValidInformation() {
+            SVProgressHUD.dismiss()
             return
         }
 
         AmicoAPI.sharedInstance.signUpUser(emailTextField!.text!, password: passwordTextField!.text!) { success, token in
             if success && token?.isEmpty == false {
                 guard let createAccountViewController = self.storyboard?.instantiateViewControllerWithIdentifier(CreateAccountViewController.storyboardId) else {
+                    SVProgressHUD.dismiss()
                     return
                 }
                 self.navigationController?.pushViewController(createAccountViewController, animated: true)
+
+            } else {
+                UIAlertController.showSimpleAlertViewWithText("SignUp unsuccessful!".localized, title: "Please try to log in later".localized, controller: self, completion: nil, alertHandler: nil)
             }
+
+            SVProgressHUD.dismiss()
         }
     }
 }

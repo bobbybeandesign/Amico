@@ -28,7 +28,7 @@ extension AmicoAPI {
     }
 
     func signUpUser(username: String, password: String, completion: (success: Bool, token: String?) -> Void) {
-        Alamofire.request(APIRouter.SignUp(username: username, password: password)).responseJSON { response in
+        Alamofire.request(APIRouterURLEncoded.SignUp(username: username, password: password)).responseJSON { response in
             guard let token = response.result.value?.valueForKey("token") as? String else {
                 completion(success: response.result.isSuccess, token: nil)
                 return

@@ -36,5 +36,7 @@ extension ForgotPasswordViewController {
 extension ForgotPasswordViewController {
     //MARK: Action Buttons
     @IBAction func resetPasswordTapped(sender: UIButton) {
+        //TODO:- Replace when API is ready.
+        UIAlertController.showSimpleAlertViewWithText("You will shortly receive instructions on how to reset your password by E-Mail".localized, title: "Done".localized, controller: self, completion: nil, alertHandler: nil)
     }
 }

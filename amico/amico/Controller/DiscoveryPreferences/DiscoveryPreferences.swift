@@ -72,6 +72,7 @@ private extension DiscoveryPreferencesTableViewController {
     //MARK:- UI Setup
     func setupUI() {
         //Taglist
+
         tagListView?.textFont = UIFont(name:"eurofurence light", size: 14)!
         tagListView?.alignment = .Center
         tagListView?.addTag("Test")

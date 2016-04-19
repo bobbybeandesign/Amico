@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="eurof35.ttf">
+            <string>Eurofurencelight</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventGuestAvatarView" customModule="amico" customModuleProvider="target">
+            <connections>
+                <outlet property="overlayCounterLabel" destination="Eai-b8-6NK" id="H0L-vG-ZCV"/>
+                <outlet property="overlayView" destination="pmr-Dx-nd8" id="GAa-Ds-Qcj"/>
+                <outlet property="userAvatarImageView" destination="ZTx-xL-ufd" id="2RM-pZ-2XU"/>
+                <outlet property="userStatusImageView" destination="ijA-x0-rPE" id="qhy-Bc-Tfo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZTx-xL-ufd">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                </imageView>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pmr-Dx-nd8" userLabel="Overlay">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eai-b8-6NK">
+                            <rect key="frame" x="9" y="8" width="22" height="24"/>
+                            <fontDescription key="fontDescription" name="Eurofurencelight" family="eurofurence light" pointSize="23"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.62745098039215685" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Eai-b8-6NK" firstAttribute="centerX" secondItem="pmr-Dx-nd8" secondAttribute="centerX" id="8Yw-Ba-q4F"/>
+                        <constraint firstItem="Eai-b8-6NK" firstAttribute="centerY" secondItem="pmr-Dx-nd8" secondAttribute="centerY" id="PX3-ak-pHF"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="approve" translatesAutoresizingMaskIntoConstraints="NO" id="ijA-x0-rPE">
+                    <rect key="frame" x="22" y="22" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="axN-OC-ehk"/>
+                        <constraint firstAttribute="height" constant="15" id="pxg-cj-BBW"/>
+                        <constraint firstAttribute="width" secondItem="ijA-x0-rPE" secondAttribute="height" multiplier="1:1" id="t4n-hj-SL3"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pmr-Dx-nd8" secondAttribute="bottom" id="D9o-ww-yAT"/>
+                <constraint firstAttribute="trailing" secondItem="ijA-x0-rPE" secondAttribute="trailing" constant="3" id="HIU-w4-vF9"/>
+                <constraint firstItem="pmr-Dx-nd8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JYa-yj-PF5"/>
+                <constraint firstAttribute="bottom" secondItem="ZTx-xL-ufd" secondAttribute="bottom" id="Llg-av-m2k"/>
+                <constraint firstAttribute="trailing" secondItem="pmr-Dx-nd8" secondAttribute="trailing" id="OIX-cB-Ueq"/>
+                <constraint firstItem="ZTx-xL-ufd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iIM-Xv-bo2"/>
+                <constraint firstAttribute="bottom" secondItem="ijA-x0-rPE" secondAttribute="bottom" constant="3" id="iuA-UM-NY1"/>
+                <constraint firstItem="pmr-Dx-nd8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="meM-6T-axH"/>
+                <constraint firstAttribute="trailing" secondItem="ZTx-xL-ufd" secondAttribute="trailing" id="nWT-wo-4wx"/>
+                <constraint firstItem="ZTx-xL-ufd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pWq-kA-ske"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="415" y="218"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="approve" width="10" height="10"/>
+    </resources>
+</document>

@@ -26,20 +26,9 @@ final class ContactUsViewController: UIViewController {
 extension ContactUsViewController {
     //MARK:- Action Buttons
     @IBAction func sendFeedbackButtonTapped(sender: UIButton) {
-        let mailComposer = MFMailComposeViewController()
-        mailComposer.mailComposeDelegate = self
-        mailComposer.setToRecipients([GlobalConstants.ContactUsViewController.ContactAmicoUrl])
-        mailComposer.setSubject("Customer Feedback")
-        mailComposer.setMessageBody("User: \(nameTextField?.text ?? "Unknown") /n \(messageTextView?.text ?? "") /n Alternate Contact Email: \(emailtextField?.text ?? "none")", isHTML: false)
-        if MFMailComposeViewController.canSendMail() {
-            navigationController?.presentViewController(mailComposer, animated: true, completion: nil)
-        } else {
-            UIAlertController.showSimpleAlertViewWithText("Your device could not send e-mail.  Please check e-mail configuration and try again.".localized,
-                                                          title: "Could Not Send Email".localized,
-                                                          controller: self,
-                                                          completion: nil,
-                                                          alertHandler: nil)
-        }
+        UIAlertController.showSimpleAlertViewWithText("Feedback Send".localized, title: "Thank you for the feedback! We will process it shortly.".localized, controller: self, completion:nil, alertHandler: { handler in
+            self.navigationController?.popViewControllerAnimated(true)
+        })
     }
 
     @IBAction func backButtonTapped(sender: AnyObject) {
@@ -65,4 +54,3 @@ private extension ContactUsViewController {
         self.navigationController?.navigationBar.barTintColor = UIColor.AmicoNavBarGreenColor()
     }
 }
-

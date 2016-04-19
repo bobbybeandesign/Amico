@@ -7,6 +7,9 @@
 //
 
 enum GlobalConstants {
+    enum SideMenu {
+//        static let sideMenuController: 
+    }
     enum  Authentification {
         static let Token = "token"
     }

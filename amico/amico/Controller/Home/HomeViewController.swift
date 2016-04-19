@@ -11,14 +11,29 @@ import UIKit
 final class HomeViewController: UIViewController {
     static let storyboardId = "homeViewController"
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        //NavBar
+        let titleDict: Dictionary<String,AnyObject> = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name: "eurofurence light", size: 26)! ]
+        self.navigationController?.navigationBar.titleTextAttributes = titleDict
+        self.navigationController?.navigationBar.barTintColor = UIColor.AmicoNavBarGreenColor()
+    }
+
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         handleUserLogin()
     }
 
-    @IBAction func logOutButtonTapped(sender: UIButton) {
-        AmicoAPI.sharedInstance.logOutUser()
-        handleUserLogin()
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.sideNavigationController?.enabled = true
+    }
+
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.sideNavigationController?.enabled = false
+        self.navigationController?.sideNavigationController
     }
 }
 
@@ -26,8 +41,11 @@ private extension HomeViewController {
     //MARK:- Helpers
     func handleUserLogin() {
         if !AmicoAPI.sharedInstance.userIsLogedIn() {
-            let nav = storyboard?.instantiateViewControllerWithIdentifier("123")
-            self.navigationController?.presentViewController(nav!, animated: true, completion: nil)
+            guard let authenticationnavigationController = storyboard?.instantiateViewControllerWithIdentifier("authenticationnavigationController") else {
+                return
+            }
+
+            self.navigationController?.presentViewController(authenticationnavigationController, animated: true, completion: nil)
         }
     }
 }

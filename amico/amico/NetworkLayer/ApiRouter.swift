@@ -15,11 +15,11 @@ enum APIRouter: URLRequestConvertible {
     case SignIn(username: String, password: String)
     case SignUp(username: String, password: String)
     case EditProfile(gender: String?,
-                    about: String?,
-                    employments: [String]?,
-                    educations: [String]?,
-                    interests: [String]?,
-                    birthDay: String?)
+        about: String?,
+        employments: [String]?,
+        educations: [String]?,
+        interests: [String]?,
+        birthDay: String?)
     case EditProfileGeolocation(lat: String, long: String)
     case DeleteProfile
     case UploadAvatar(avatar: NSData)
@@ -95,6 +95,7 @@ enum APIRouterURLEncoded: URLRequestConvertible {
     static let baseURL = NSURL(string: "http://dev.aisnovations.com:3000")!
 
     case SignIn(username: String, password: String)
+    case SignUp(username:String, password: String)
 
     var URL: NSURL {
         return APIRouterURLEncoded.baseURL.URLByAppendingPathComponent(route.path)
@@ -105,13 +106,17 @@ enum APIRouterURLEncoded: URLRequestConvertible {
         case .SignIn(let username, let password):
             let params: [String : AnyObject]?  = ["username" : username, "password" : password]
             return ("/public/token", params, .GET)
+
+        case .SignUp(let username, let password):
+            let params: [String : AnyObject]? = ["username" : username, "password" : password]
+            return ("/public/profile", params, .POST)
         }
     }
 
     var URLRequest: NSMutableURLRequest {
-        let request = Alamofire.ParameterEncoding.URL.encode(NSURLRequest(URL: URL), parameters: (route.params ?? nil)).0
+        var request: NSMutableURLRequest = NSMutableURLRequest(URL: URL)
         request.HTTPMethod = route.method.rawValue
+        request = Alamofire.ParameterEncoding.URL.encode(request, parameters: (route.params ?? nil)).0
         return request
     }
 }
-

@@ -72,13 +72,13 @@ private extension LoginViewController {
 extension LoginViewController {
     //MARK:- Action Buttons
     @IBAction func loginButtonTapped(sender: UIButton) {
+        SVProgressHUD.show()
         if !userHasEnteredValidInformation() {
+            SVProgressHUD.dismiss()
             return
         }
 
-        SVProgressHUD.show()
         AmicoAPI.sharedInstance.signInUser(emailTextField!.text!, password: passwordTextField!.text!) { success, token in
-           SVProgressHUD.dismiss()
             if success && token?.isEmpty == false {
                 self.dismissViewControllerAnimated(true, completion: nil)
             } else {
@@ -88,6 +88,8 @@ extension LoginViewController {
                                                               completion: nil,
                                                               alertHandler: nil)
             }
+            SVProgressHUD.dismiss()
+
         }
     }
 
